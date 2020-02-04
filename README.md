@@ -25,5 +25,5 @@ A practical session is used in a lab environment in the form of a case study (or
 Jiawei Han, Micheline Kamber (2012 ): Data Mining: Concepts and Technique, 3rd Edition, Elsevier
 Shmueli, Patel and Bruce (2010 ): Data Mining for Business Intelligence: Concepts, Techniques, and Applications in Microsoft Office Excel with XLMiner. 2nd Edition, Wiley
 ## Slides:
-1_ Introduction to Datamining, [Slides](https://github.com/mohandesosama/data_warehouse_and_data_mining/blob/master/Datamining-Slides/01_Introduction%20to%20datamining.pptx)
-2_ Getting to know your data, [Slides](https://github.com/mohandesosama/data_warehouse_and_data_mining/blob/master/Datamining-Slides/02_Getting%20to%20know%20your%20data.ppt)[Video1](https://www.youtube.com/watch?v=S2BugHsg5q0&list=PLXtOe7VV9qsLhbaTOA3RG6vNuJHr-DkeI&index=1),[Video2](https://www.youtube.com/watch?v=XIa01b_7xSQ&list=PLXtOe7VV9qsLhbaTOA3RG6vNuJHr-DkeI&index=2)
+* Introduction to Datamining, [Slides](https://github.com/mohandesosama/data_warehouse_and_data_mining/blob/master/Datamining-Slides/01_Introduction%20to%20datamining.pptx)
+* Getting to know your data, [Slides](https://github.com/mohandesosama/data_warehouse_and_data_mining/blob/master/Datamining-Slides/02_Getting%20to%20know%20your%20data.ppt)[Video1](https://www.youtube.com/watch?v=S2BugHsg5q0&list=PLXtOe7VV9qsLhbaTOA3RG6vNuJHr-DkeI&index=1),[Video2](https://www.youtube.com/watch?v=XIa01b_7xSQ&list=PLXtOe7VV9qsLhbaTOA3RG6vNuJHr-DkeI&index=2)
