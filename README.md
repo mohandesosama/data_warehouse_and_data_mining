@@ -1,1 +1,28 @@
-# data_warehouse_and_data_mining
+# Data Warehouse and Data Mining
+| course number | course title | Credit Hours | Lecture Hours | Lab Hours | Prerequests |
+|---------------|--------------|--------------|---------------|-----------|-------------|
+|IS 372        |Data Warehouse and Data Mining |4 |3 |2 | IS 252, STAT 301 |
+# Course Description
+This course covers the concepts of building a data-warehouse to be used through applying the main data mining algorithms. The Knowledge Discovery in Large Database techniques will be explained. Then the computational techniques and algorithms for analyzing and mining patterns in large-scale datasets it will be covered. The considerable amount of effort will also be put on computational aspects of algorithm implementation. The importance of data mining is explored by introducing principal ideas in statistical learning. This course focuses on mining process which includes data selection and cleaning, machine learning techniques to learn knowledge that is hidden in data, and the reporting and visualization of the resulting knowledge.
+# Course Objectives
+After completing this course the student will be able to:
+* Build a Data Warehouse and apply OLAP technology for data mining: Data preparation, design multi domination data model
+* Explore the novel way of extraction of new knowledge from large amounts of data.
+* Examine the concepts, issues, tasks and techniques of data mining and how to apply data mining tools to real-world problems.
+* Discover hidden patterns, finding predictive information that experts may miss because it lies outside their expectations.
+* Develop appropriate technologies to solve problems related to data mining.
+# Course Outline
+* Introduction to Data Mining, Data Mining Goals, Stages of the Data Mining Process, Data Mining Techniques, Knowledge Representation Methods.
+* Data Warehouse and OLAP technology
+* Data preprocessing.
+* Data mining algorithms: Classification/Prediction.
+* Clustering algorithms: Basic issues in clustering, Partitioning methods: Rule mining; association rule mining and sequential Mining Patterns.
+* Advanced techniques, Data Mining Techniques:
+* Advanced techniques, Data Mining software and applications
+# Lab
+A practical session is used in a lab environment in the form of a case study (or a mini-project). The above course outline is applied in the lab using a tool such as R visual studio or Rapid Miner or Weka.
+# Textbooks:
+Jiawei Han, Micheline Kamber (2012 ): Data Mining: Concepts and Technique, 3rd Edition, Elsevier
+Shmueli, Patel and Bruce (2010 ): Data Mining for Business Intelligence: Concepts, Techniques, and Applications in Microsoft Office Excel with XLMiner. 2nd Edition, Wiley
+# Slides:
+1. Introduction to Datamining, [Slides](https://github.com/mohandesosama/data_warehouse_and_data_mining/blob/master/Datamining-Slides/01_Introduction%20to%20datamining.pptx)
