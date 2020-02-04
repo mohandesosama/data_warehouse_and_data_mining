@@ -27,3 +27,8 @@ A practical session is used in a lab environment in the form of a case study (or
 ## Slides:
 * Introduction to Datamining, [Slides](https://github.com/mohandesosama/data_warehouse_and_data_mining/blob/master/Datamining-Slides/01_Introduction%20to%20datamining.pptx)
 * Getting to know your data, [[Slides]](https://github.com/mohandesosama/data_warehouse_and_data_mining/blob/master/Datamining-Slides/02_Getting%20to%20know%20your%20data.ppt)[[Video1]](https://www.youtube.com/watch?v=S2BugHsg5q0&list=PLXtOe7VV9qsLhbaTOA3RG6vNuJHr-DkeI&index=1),[[Video2]](https://www.youtube.com/watch?v=XIa01b_7xSQ&list=PLXtOe7VV9qsLhbaTOA3RG6vNuJHr-DkeI&index=2)
+* Preprocessing, [[Slides]](https://github.com/mohandesosama/data_warehouse_and_data_mining/blob/master/Datamining-Slides/03_Preprocessing.ppt)
+* OLAP, [[Slides]](https://github.com/mohandesosama/data_warehouse_and_data_mining/blob/master/Datamining-Slides/04OLAP.ppt)
+* Frequent Patterns Basics, [[Slides]](https://github.com/mohandesosama/data_warehouse_and_data_mining/blob/master/Datamining-Slides/05FPBasic.ppt)
+* Classification Basics, [[Sldies]](https://github.com/mohandesosama/data_warehouse_and_data_mining/blob/master/Datamining-Slides/06ClassBasic.ppt)
+* Clustering, [[Slides]](https://github.com/mohandesosama/data_warehouse_and_data_mining/blob/master/Datamining-Slides/06ClassBasic.ppt)
