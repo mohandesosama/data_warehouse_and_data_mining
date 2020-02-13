@@ -1,7 +1,7 @@
 # Data Warehouse and Data Mining
 | course number | course title | Credit Hours | Lecture Hours | Lab Hours | Prerequests |
 |---------------|--------------|--------------|---------------|-----------|-------------|
-|IS 372        |Data Warehouse and Data Mining |4 |3 |2 | IS 252, STAT 301 |
+|IS 372        |Data Warehouse and Data Mining |4 |3 |2 | IS 252, STAT 301 (statistics)|
 ## Course Description
 This course covers the concepts of building a data-warehouse to be used through applying the main data mining algorithms. The Knowledge Discovery in Large Database techniques will be explained. Then the computational techniques and algorithms for analyzing and mining patterns in large-scale datasets it will be covered. The considerable amount of effort will also be put on computational aspects of algorithm implementation. The importance of data mining is explored by introducing principal ideas in statistical learning. This course focuses on mining process which includes data selection and cleaning, machine learning techniques to learn knowledge that is hidden in data, and the reporting and visualization of the resulting knowledge.
 ## Course Objectives
