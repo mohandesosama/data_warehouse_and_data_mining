@@ -22,7 +22,7 @@ After completing this course the student will be able to:
 ## Lab
 A practical session is used in a lab environment in the form of a case study (or a mini-project). The above course outline is applied in the lab using a tool such as R visual studio or Rapid Miner or Weka.
 ## Textbooks:
-* Jiawei Han, Micheline Kamber (2012 ): Data Mining: Concepts and Technique, 3rd Edition, Elsevier
+* Jiawei Han, Micheline Kamber (2012 ): Data Mining: Concepts and Technique, 3rd Edition, Elsevier [External Link](http://myweb.sabanciuniv.edu/rdehkharghani/files/2016/02/The-Morgan-Kaufmann-Series-in-Data-Management-Systems-Jiawei-Han-Micheline-Kamber-Jian-Pei-Data-Mining.-Concepts-and-Techniques-3rd-Edition-Morgan-Kaufmann-2011.pdf)
 * Shmueli, Patel and Bruce (2010 ): Data Mining for Business Intelligence: Concepts, Techniques, and Applications in Microsoft Office Excel with XLMiner. 2nd Edition, Wiley
 ## Slides:
 * Introduction to Datamining, [[Slides]](https://github.com/mohandesosama/data_warehouse_and_data_mining/blob/master/Datamining-Slides/01_Introduction%20to%20datamining.pptx),[[Video]](https://youtu.be/WY_Qg3PHIIE)
