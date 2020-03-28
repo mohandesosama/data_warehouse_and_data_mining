@@ -4,7 +4,6 @@ df=pd.read_csv('Test_Decisiontree.csv')
 def calc_field_gain(df, field_name):
     #CALC info_D
     info_D=calc_total_info(df)
-
     #extract the column you want to calculate entropy for 
     df1_column = df[field_name]
     #extract counts of the values in that column
@@ -12,7 +11,8 @@ def calc_field_gain(df, field_name):
     # extract the name of each value count, categorical values
     index_vals=data_vals.index.values
   
-    info_age=0
+    info_field=0
+    formula = 'Info_'+ field_name+'(D)='
     for i in range(len(index_vals)):
         # get data table of the first categorical value, data table for sepcific categorical value
         df_sub=df.query(field_name + '=="' + index_vals[i] + '"')
@@ -22,11 +22,18 @@ def calc_field_gain(df, field_name):
         vals=df_sub_last_column.value_counts()
         # if the nubmer of yess is not zeor or the number of nos is not zero
         if(len(vals)>1):
-            info_age += (df_sub.count()[0]/df.count()[0]*info(list(vals)))
+            info_field += (df_sub.count()[0]/df.count()[0]*info(list(vals)))
+            formula += str(df_sub.count()[0]) + '/' + str(df.count()[0]) + '*' + "I(" + str(list(vals)) + ")"
         else:
             # if yes count or no count is 0 then log2(1) with give 0, so info result is always zero
-            info_age += 0
-    return info_D-info_age
+            info_field += 0
+        # don't add + at the end of the formula
+        if i != len(index_vals)-1:
+            formula += "+"
+        else: 
+            formula += '='+str(info_field)
+    print(formula)
+    return info_D-info_field
 
 def info(val_lst):
     tot = sum(val_lst)
@@ -43,8 +50,9 @@ def calc_total_info(df):
     total_yes_no=df1_decision.value_counts()
     # calculate info of the entire table
     info_D=info(list(total_yes_no))
+    print('Info(D): ' + str(list(total_yes_no)), info_D)
     return info_D
 
 if __name__ == '__main__':
-    field_name='credit_rating'
+    field_name='income'
     print('info gain of ' + field_name + ':',calc_field_gain(df,field_name))
