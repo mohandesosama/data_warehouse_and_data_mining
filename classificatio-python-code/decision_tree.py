@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-def calc_field_gain(df, field_name,info_gain=False):
+def calc_field_gain(df, field_name):
     #CALC info_D
     info_D=calc_total_info(df)
     #extract the column you want to calculate entropy for 
