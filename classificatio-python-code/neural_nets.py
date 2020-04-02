@@ -33,11 +33,13 @@ class Neural_Network(object):
 
     def train(self, X, Y):
         epochs=100
+        print("Neural Network: started the training process ... ")
         for k in range(epochs):
             o = self.forward(X)
             loss=self.backward(X, Y, o)
             print("Loss  {}/{} is ".format(k,epochs),np.round(loss,3))
-                
+        #print('W1 ', self.W1)    
+        #print('W2 ', self.W2)      
 
     def sigmoid(self,s):
         return 1/(1+np.exp(-s))
@@ -53,14 +55,14 @@ if __name__ == '__main__':
     # normalize x values to be between 0 and 1
     X_=X/np.amax(X,axis=0)
     X_train=X_[0:14]
-    X_test=X_[15:]
-    print(X_train)
+    X_test=X_[14:]
     # y is the class labels vector
     Y_=np.array(df[df.columns[[-1]]])
     Y_train=Y_[0:14]
-    Y_test=Y_[15:]
+    Y_test=Y_[14:]
     NN = Neural_Network()
     # training stage
     NN.train(X_train,Y_train)
-    print(NN.forward(X_test) > 0.5)
+    print('accuracy ', np.mean([(NN.forward(X_test) > 0.5)*1 == Y_test])*100)
+    print(type(Y_test))
     #print(X_)

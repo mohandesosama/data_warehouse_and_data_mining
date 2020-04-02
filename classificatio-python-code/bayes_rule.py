@@ -38,6 +38,7 @@ def calc_field_probs(df,field_name,field_value):
         counter += 1
         probs[dex]=p
     return probs
+    
 def user_input(df):
     user_in={}
     # remove the last column, it is the class label
@@ -54,19 +55,33 @@ def user_input(df):
 
 if __name__=="__main__":
     df=pd.read_csv('StudentsDB.csv')
-    class_ps=calc_class_probs(df)
-    us_in=user_input(df)
+    df_train = df.iloc[:14]
+    df_test = df.iloc[14:]
+    # we have to remove the last column from the test set
+    # our algorithm will geuess it 
+    df_test_X=df_test.drop(df_test.columns[[-1]],axis=1)
+    df_test_Y=[(t=='yes')*1 for t in list(df_test.iloc[:,-1])]
+    #print(df_test_Y)
+    class_ps=calc_class_probs(df_train)
+    #us_in=user_input(df)
     # get all probabilities of the fields in one list
-    ps=[calc_field_probs(df,col,us_in[col]) for col in us_in.keys()]
-    # add the prob of yes, no classes
-    ps.append(class_ps)
-    total_ps={}
-    # multiply filed probs and class probs of yes and no and get the resuls
-    for dic in ps:
-        for key in dic:
-            total_ps[key] = total_ps.get(key,1)* dic[key]
-    print(ps)
-    print(total_ps)
+    o=[]
+    for i in range(df_test_X.shape[0]):
+        # navigate the test set record by record
+        record=df_test_X.iloc[i].to_dict()
+        #print(record)
+        ps=[calc_field_probs(df_train,col,record[col]) for col in record.keys()]
+        # add the prob of yes, no classes
+        ps.append(class_ps)
+        total_ps={}
+        # multiply filed probs and class probs of yes and no and get the resuls
+        for dic in ps:
+            for key in dic:
+                total_ps[key] = total_ps.get(key,1)* dic[key]
+        #print(ps)
+        o.append((total_ps['yes'] > total_ps['no'])*1)
+    
+    print('Accuracy : ',np.mean([np.array(o) == np.array(df_test_Y)])*100) 
         
 
    
